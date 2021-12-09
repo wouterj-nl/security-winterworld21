@@ -23,6 +23,9 @@ security:
 
             # activate different ways to authenticate
             # https://symfony.com/doc/current/security.html#the-firewall
+            form_login:
+              login_path: login
+              check_path: login
 
             # https://symfony.com/doc/current/security/impersonating_user.html
             # switch_user: true
