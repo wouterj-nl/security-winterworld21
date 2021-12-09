@@ -15,6 +15,9 @@
         "symfony/yaml": "6.0.*"
     },
     "require-dev": {
+        "symfony/maker-bundle": "^1.36",
+        "symfony/stopwatch": "6.0.*",
+        "symfony/web-profiler-bundle": "6.0.*"
     },
     "config": {
         "optimize-autoloader": true,
