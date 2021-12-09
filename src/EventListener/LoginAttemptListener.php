@@ -17,8 +17,8 @@ class LoginAttemptListener
         $this->logger = $logger;
     }
 
-    #[AsEventListener(event: LoginSuccessEvent::class)]
-    #[AsEventListener(event: LoginFailureEvent::class)]
+    #[AsEventListener(event: LoginSuccessEvent::class, dispatcher: 'security.event_dispatcher.main')]
+    #[AsEventListener(event: LoginFailureEvent::class, dispatcher: 'security.event_dispatcher.main')]
     public function onLoginAttempt(LoginSuccessEvent|LoginFailureEvent $event)
     {
         $userIdentifier = $event->getPassport()->getBadge(UserBadge::class)->getUserIdentifier();
