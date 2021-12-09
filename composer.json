@@ -22,7 +22,8 @@
         "symfony/security-bundle": "6.0.*",
         "symfony/twig-bundle": "6.0.*",
         "symfony/validator": "6.0.*",
-        "symfony/yaml": "6.0.*"
+        "symfony/yaml": "6.0.*",
+        "symfonycasts/verify-email-bundle": "^1.7"
     },
     "require-dev": {
         "symfony/maker-bundle": "^1.36",
