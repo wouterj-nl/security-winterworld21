@@ -21,6 +21,7 @@ security:
           pattern: ^/api
           json_login:
             check_path: 'api_login'
+          required_badges: ['CsrfTokenBadge']
         main:
             lazy: true
             provider: app_user_provider
